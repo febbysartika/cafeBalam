@@ -1,6 +1,6 @@
 import { MaterialIcons } from '@expo/vector-icons';
 import React from 'react'
-import { View, Text, Platform, Image, SafeAreaView, StyleSheet, ScrollView} from 'react-native'
+import { View, Text, Platform, Image, SafeAreaView, StyleSheet, ScrollView, TouchableOpacity} from 'react-native'
 import HeaderButton from '../components/HeaderButton'
 import {HeaderButtons, Item} from 'react-navigation-header-buttons'
 import {DrawerActions} from '@react-navigation/native'
@@ -26,7 +26,7 @@ const ProfileScreen = (props) =>{
             <View style={{ alignSelf: "center" }}>
               <View style={styles.profileImage}>
                 <Image
-                  source={{ uri: "https://image.winudf.com/v2/image1/Y29tLmFuZHJvbW8uZGV2NjYyNTMwLmFwcDk4NTQyMl9zY3JlZW5fMF8xNTYyNDI3MTQ0XzA3Nw/screen-0.jpg?fakeurl=1&type=.jpg" }}
+                  source={{ uri: "https://kpop-kdrama.net/wp-content/uploads/2021/04/butta-cover.png" }}
                   style={styles.image}
                   resizeMode="center"
                 ></Image>
@@ -46,11 +46,7 @@ const ProfileScreen = (props) =>{
               <Text style={[styles.text, { fontWeight: "200", fontSize: 36 }]}>
                 Koreby^^
               </Text>
-              <Text style={[styles.text, { color: "#AEB5BC", fontSize: 14 }]}>
-                Developer
-              </Text>
             </View>
-    
             <View style={styles.statsContainer}>
               <View
                 style={[
@@ -62,7 +58,7 @@ const ProfileScreen = (props) =>{
                   },
                 ]}
               >
-                <Text style={[styles.text, { fontSize: 24 }]}>13,0613</Text>
+                <Text style={[styles.text, { fontSize: 24 }]}>2</Text>
                 <Text style={[styles.text, styles.subText]}>Food Favorite</Text>
               </View>
             </View>
@@ -92,8 +88,8 @@ const ProfileScreen = (props) =>{
                   <Text
                     style={[styles.text, { color: "#41444B", fontWeight: "300" }]}
                   >
-                    Numbher Phone :
-                    <Text style={{ fontWeight: "400" }}>089638889XXX</Text>
+                    Number Phone :
+                    <Text style={{ fontWeight: "400" }}>0821052021</Text>
                   </Text>
                 </View>
               </View>
@@ -105,7 +101,7 @@ const ProfileScreen = (props) =>{
                     style={[styles.text, { color: "#41444B", fontWeight: "300" }]}
                   >
                     Email:
-                    <Text style={{ fontWeight: "400" }}>andi@mail.com</Text>
+                    <Text style={{ fontWeight: "400" }}>Butter21@pam.com</Text>
                   </Text>
                 </View>
               </View>
@@ -215,6 +211,19 @@ const styles = StyleSheet.create({
         borderRadius:6,
         marginTop:3,
         marginRight:20
+    },
+    userBtn: {
+      borderColor: '#2e64e5',
+      borderWidth: 2,
+      borderRadius: 3,
+      paddingVertical: 8,
+      paddingHorizontal: 12,
+      marginHorizontal: 5,
+      alignItems:"center",
+      justifyContent:"center"
+    },
+    userBtnTxt: {
+      color: '#2e64e5',
     }
 })
 
