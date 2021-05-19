@@ -169,15 +169,6 @@ const MainNavigator = () => {
           ),
         }}/>
         
-        {/*<Drawer.Screen name="Filter" component={filterNavigations} options={{
-          drawerIcon: (props) => (
-            <Ionicons
-              name={Platform.OS === "android" ? "md-color-filter" : "ios-color-filter"}
-              size={23}
-              color={props.color}
-            />
-          ),
-        }}/>*/}
 
         <Drawer.Screen name="My Profile" component={ProfileNavigation} style={{fontWeight:'bold'}} options={{
           drawerIcon: (props) => (
